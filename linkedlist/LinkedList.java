@@ -45,7 +45,7 @@ public class LinkedList {
     
     public int getNodeByPosition(int index){
         if(index < 0){
-            System.out.print("Index must postive number");
+            System.out.print("index must postive number");
             return 0;
         }
         Node temp = head;
@@ -79,7 +79,7 @@ public class LinkedList {
         System.out.println("List node:");
         ListNode.printListNode();
 
-        System.out.print("\nNhap vao vi tri muon biet: ");
+        System.out.print("\nEnter position(positive number): ");
         int value = sc.nextInt();
         int result = ListNode.getNodeByPosition(value);
         System.out.println("Value at position " + value + " : " + result);
