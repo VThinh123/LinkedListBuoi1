@@ -4,6 +4,8 @@
  */
 package linkedlist;
 
+import java.util.Scanner;
+
 
 public class LinkedList {
     Node head;
@@ -36,7 +38,9 @@ public class LinkedList {
         while (list != null){
             System.out.print(list.getData() + "-->");
             list = list.next;
-        }
+
+        }      
+        System.out.print("null");
     }
     
     public int getNodeByPosition(int index){
@@ -56,6 +60,7 @@ public class LinkedList {
         return 0;
     }
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         LinkedList ListNode = new LinkedList();
         //in ra node tu lon toi nho
         ListNode.addFirst(1);
@@ -73,9 +78,11 @@ public class LinkedList {
         
         System.out.println("List node:");
         ListNode.printListNode();
-        
-        int result = ListNode.getNodeByPosition(3);
-        System.out.println("\nValue at position 3:" + result);
+
+        System.out.print("\nNhap vao vi tri muon biet: ");
+        int value = sc.nextInt();
+        int result = ListNode.getNodeByPosition(value);
+        System.out.println("Value at position " + value + " : " + result);
     }
     
 }
