@@ -58,18 +58,18 @@ public class LinkedList {
     public static void main(String[] args) {
         LinkedList ListNode = new LinkedList();
         //in ra node tu lon toi nho
-//        ListNode.addFirst(1);
-//        ListNode.addFirst(2);
-//        ListNode.addFirst(3);
-//        ListNode.addFirst(4);
-//        ListNode.addFirst(5);
+        ListNode.addFirst(1);
+        ListNode.addFirst(2);
+        ListNode.addFirst(3);
+        ListNode.addFirst(4);
+        ListNode.addFirst(5);
         
         // in ra tu nho toi lon
-        ListNode.addLast(1);
-        ListNode.addLast(2);
-        ListNode.addLast(3);
-        ListNode.addLast(4);
-        ListNode.addLast(5);
+//        ListNode.addLast(1);
+//        ListNode.addLast(2);
+//        ListNode.addLast(3);
+//        ListNode.addLast(4);
+//        ListNode.addLast(5);
         
         System.out.println("List node:");
         ListNode.printListNode();
